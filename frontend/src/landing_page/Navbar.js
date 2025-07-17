@@ -29,11 +29,16 @@ function Navbar() {
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <Link class="nav-link active" aria-current="page" to ="/signup">
-                Signup
-              </Link>
-            </li>
+            <li className="nav-item">
+  <a
+    className="nav-link active"
+    href="http://localhost:3000"  // replace with actual dashboard URL
+    target="_blank"              // optional: opens in new tab
+    rel="noopener noreferrer"   // recommended for security
+  >
+    Dashboard
+  </a>
+</li>
           </ul>
         </div>
       </div>
