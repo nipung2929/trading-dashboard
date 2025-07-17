@@ -8,7 +8,7 @@ const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
 
   useEffect(() => {
-    axios.get("backend-env.eba-2uvuvi6e.ap-south-1.elasticbeanstalk.com//allHoldings").then((res) => {
+    axios.get("backend-env.eba-2uvuvi6e.ap-south-1.elasticbeanstalk.com/allHoldings").then((res) => {
       // console.log(res.data);
       setAllHoldings(res.data);
     });
