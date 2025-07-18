@@ -6,7 +6,7 @@ const Positions = () => {
   const [allPositions, setAllPositions] = useState([]);
 
   useEffect(() => {
-    axios.get("http://backend-env.eba-2uvuvi6e.ap-south-1.elasticbeanstalk.com/allPositions").then((res) => {
+    axios.get("https://api.digitalwallethub.site/allPositions").then((res) => {
       // console.log(res.data);
       setAllPositions(res.data);
     });
