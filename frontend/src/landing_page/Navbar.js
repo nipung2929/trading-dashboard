@@ -32,7 +32,7 @@ function Navbar() {
             <li className="nav-item">
   <a
     className="nav-link active"
-    href="http://localhost:3000"  // replace with actual dashboard URL
+    href="https://dashboard.digitalwallethub.site"  // replace with actual dashboard URL
     target="_blank"              // optional: opens in new tab
     rel="noopener noreferrer"   // recommended for security
   >
