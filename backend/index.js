@@ -54,6 +54,15 @@ app.get("/allPositions", async (req, res) => {
   }
 });
 
+app.get("/allOrders", async (req, res) => {
+  try {
+    const allOrders = await OrdersModel.find({});
+    res.json(allOrders);
+  } catch (err) {
+    res.status(500).json({ error: "Failed to fetch orders" });
+  }
+});
+
 app.post("/newOrder", async (req, res) => {
   try {
     const newOrder = new OrdersModel({
